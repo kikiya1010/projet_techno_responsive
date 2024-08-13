@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <ul>
+           <li>cv</li>
+            <li>wew</li>
+            <li>dqwdq</li>
+            <li>qwddq</li>
+            <li>dwqdq</li>
+        </ul>
+
+        <h3 class="mtl">Laval</h3>
+        <h1 id="t">bienvenue a tous</h1>
+        <h1 id="z">bonsoir</h1>
+        <div>
+          <p> cdddddv</p>
+          <p id="a"> cvdd</p>
+          <p> cv3</p>
+          <p> cv2</p>
+          <a href="https://www.facebook.com">lien</a>
+        </div>
+        <button class="">clique</button>
+        <input type="text">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+             //   $('li:eq(2)').css({
+            //    color:'red',
+           //    backgroundColore:"blue",
+          //    fontSize:"20px"
+         //  });
+           
+          $("div").append("<p>onyx</p>");  // permet d'ajouter element a la fin
+          $("div").propend("<h2>DIA</h2>");// permet d'ajouter element au début
+          $("div #a").after("<h4>Maeva</h4>");// permet d'ajouter element au début
+          $("div #a").before("<h4>junior</h4>");// permet d'ajouter element au début
+          $("li").addClass("abcd");// permet d ajouter une classe
+          $('li').removeClass('mtl'); //supp une class
+          $('#t').empty(); //supp le contenue de la balise
+          $('#z').remove();//supp tous meme la balise
+        //creation 
+          let h=$("<h1></h1>");à
+          h.text("Bonjour");
+          h.attr("id","laval");
+          $("div").append(h)
+        // evenement 
+        $('button').mouseenter(function(){
+            $(this).css("backgroundColor","red");
+            // $('body').css("backgroundColor","pink")
+            let i = $('input').val(); // pour rec le contenu d'un element dans un formulaire et pour recuperer les infos de tout le formulaire on utilise :
+            alert (i)
+            
+        })
+          
+
+        let b =$('a').attr('href')
+        alert(b)
+
+        
+        </script>
+        <!--
+            avec .html() on peut ajouter des balises html tandis que .text on peut pas
+            even : selectionner les elements pairs , odd :impaires
+        -->
+
+    </body>
+</html>
